@@ -1,0 +1,14 @@
+{
+  "name": "React Pomodoro Extension",
+  "description": "Pomodoro technique timer built with React",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "pomodoro.html"
+  },
+  "background": {
+    "scripts": ["background-script.js"]
+  },
+  "permissions": ["notifications"],
+  "web_accessible_resources": ["pomodoro.png"]
+}

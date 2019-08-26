@@ -1,0 +1,20 @@
+{
+  "name": "react-pomodoro-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:raerpo/react-pomodoro-extension.git",
+  "author": "Rafael Poveda <rafael.poveda@cornershopapp.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "rm -rf dist && mkdir dist && cp src/manifest.json dist/manifest.json && cp src/pomodoro.png dist/pomodoro.png && cp src/background-script.js dist/background-script.js && parcel src/pomodoro.html ",
+    "build": "parcel build src/pomodoro.html && cp src/manifest.json dist/manifest.json && cp src/pomodoro.png dist/pomodoro.png && cp src/background-script.js dist/background-script.js"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}
